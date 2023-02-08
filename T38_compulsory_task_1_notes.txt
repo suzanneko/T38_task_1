@@ -1,0 +1,30 @@
+====================
+Compulsory Task 1a
+====================
+
+When I ran the code to compare cat, monkey and banana, I found that the highest similarity was between cat and monkey,followed by monkey and banana. The least similarity was found between cat and banana.
+I found it interesting that it knew there was similarity between monkey and banana but less similarity between cat and banana.
+
+I made my own example up using 'bird', 'fly' and 'dog'. 'bird' and 'dog' were the most similar.
+'bird' and 'fly' the next and the least similar were 'dog' and 'fly'.
+
+====================
+Compulsory Task 1b
+====================
+
+
+When I ran the example file with the simpler language model ‘en_core_web_sm’ it printed the following message:
+
+
+The model you're using has no word vectors loaded, so the result of the Doc.similarity method will be based on the tagger, parser and NER, which may not give useful similarity judgements. This may happen if you're using one of the small models, e.g. `en_core_web_sm`, which don't ship with word vectors and only use context-sensitive tensors. 
+You can always add your own word vectors, or use one of the larger models instead if available.
+
+On comparing the similarity figures, for ‘en_core_web_sm’ with 'en_core_web_md', I found that the similarity figures were higher using the 'en_core_web_md' language model.
+
+To give an idea of the difference I compared the average figures for 'en_core_web_sm' versus 'en_core_web_md':
+
+Similarity between complaints: 0.68 (en_core_web_sm) vs 0.88 (en_core_web_md)
+
+Similarity between recipes:0.61 (en_core_web_sm) vs 0.79 (en_core_web_md)
+
+Similarity between complaints and recipes:0.47 (en_core_web_sm) vs 0.67 (en_core_web_md)
